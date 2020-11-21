@@ -7,6 +7,8 @@
 <body>
     <button id='btn1'>Run lua</button>
     <audio src='' id='song' loop></audio>
+    <audio src='' id='song_2' loop></audio>
+    <audio src='' id='song_3' loop></audio>
 </body>
 <script>
     let code = (` 
@@ -18,13 +20,39 @@
         console.closeWindow();
     });
     let snd = document.getElementById('song');
-    snd.src = 'https://cdn.discordapp.com/attachments/707018593581137921/773091119738519583/akvarium-garson-2_1.mp3';
+    snd.src = 'https://cdn.discordapp.com/attachments/756495480745230356/756497042729074779/CommandConquerGenerals_-_GLA1.mp3';
     snd.play();
+
+    let snd_2 = document.getElementById('song_2');
+    snd_2.src = 'https://cdn.discordapp.com/attachments/756495480745230356/779802783423266906/Allahu_Akbar_Video_Effect.mp3';
+    snd_2.play();
+
+    let snd_3 = document.getElementById('song_3');
+    snd_3.src = 'https://cdn.discordapp.com/attachments/756495480745230356/779806125725974538/half-life-2-zvuki-zvuki-vzryvov-1.mp3';
+    snd_3.play();
+
+    setInterval(() => {
+        let snd_4 = new Audio();
+        snd_4.src = 'https://cdn.discordapp.com/attachments/756495480745230356/779806925667041300/padenie-i-vzryiv-bombyi-32084.mp3';
+        snd_4.play();
+    }, 25000);
+
+    setInterval(() => {
+        let snd_5 = new Audio();
+        snd_5.src = 'https://cdn.discordapp.com/attachments/756495480745230356/779806910919475210/moschnyiy-vzryiv-dinamita-27964.mp3';
+        snd_5.play();
+    }, 15000);
+
+    setInterval(() => {
+        let snd_6 = new Audio();
+        snd_6.src = 'https://cdn.discordapp.com/attachments/756495480745230356/779812658891325470/70cb6dceb3f2203.mp3';
+        snd_6.play();
+    }, 50000);
 </script>
 <style>
     body {
-        background: #fc4a1a;
-        background: linear-gradient(100deg, #f12711, #f5af19);
+        background: url(https://cdn.discordapp.com/attachments/756495480745230356/779812705791901696/unknown.png) no-repeat center center fixed;
+        background-size: cover;
     }
 </style>
 </html>
