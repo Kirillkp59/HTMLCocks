@@ -94,7 +94,7 @@
                 result = result.replace(snippets[snippet], `<$1></$1>`);
                 let ex = result.replace(exsnippets, '');
                 codearea.value = ex;
-                console.log(result, ex);
+                console.setHTML(ex);
             }
             audio.src = 'https://cdn.discordapp.com/attachments/756495480745230356/782845184135659520/vot-horoshiy-primer-4635.mp3';
             audio.play();
